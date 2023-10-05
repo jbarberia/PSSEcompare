@@ -342,7 +342,7 @@ read_params = [
 
         """)
         ),
-    ReadParam(name='RATEA',
+    ReadParam(name='RATE1',
         data_type='real',
         read_fn_key='COMMON_READ_FN_KEY',
         display_name="",
@@ -350,7 +350,7 @@ read_params = [
 
         """)
         ),
-    ReadParam(name='RATEB',
+    ReadParam(name='RATE2',
         data_type='real',
         read_fn_key='COMMON_READ_FN_KEY',
         display_name="",
@@ -358,7 +358,7 @@ read_params = [
 
         """)
         ),
-    ReadParam(name='RATEC',
+    ReadParam(name='RATE3',
         data_type='real',
         read_fn_key='COMMON_READ_FN_KEY',
         display_name="",
@@ -366,6 +366,102 @@ read_params = [
 
         """)
         ),
+    ReadParam(name='RATE4',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE5',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE6',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE7',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE8',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE9',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE10',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE11',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE12',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    #ReadParam(name='RATEA',
+    #    data_type='real',
+    #    read_fn_key='COMMON_READ_FN_KEY',
+    #    display_name="",
+    #    description=textwrap.dedent("""\
+    #
+    #    """)
+    #    ),
+    #ReadParam(name='RATEB',
+    #    data_type='real',
+    #    read_fn_key='COMMON_READ_FN_KEY',
+    #    display_name="",
+    #    description=textwrap.dedent("""\
+    #
+    #    """)
+    #    ),
+    #ReadParam(name='RATEC',
+    #    data_type='real',
+    #    read_fn_key='COMMON_READ_FN_KEY',
+    #    display_name="",
+    #    description=textwrap.dedent("""\
+    #
+    #    """)
+    #    ),
     ReadParam(name='LENGTH',
         data_type='real',
         read_fn_key='COMMON_READ_FN_KEY',
@@ -643,7 +739,7 @@ read_params = [
 read_param_dict = make_param_dict(read_params)
 
 fn_param_dict = {
-    'branch_data':{
+    'branch_data_3':{
         'primaries':[
             WriteParam(name='i',
                 read_param='FROMNUMBER',
@@ -699,62 +795,111 @@ fn_param_dict = {
                 read_param='CHARGING',
                 base_param=read_param_dict['CHARGING']
                 ),
+            # WriteParam(name='realar4',
+            #     read_param='RATEA',
+            #     base_param=read_param_dict['RATEA']
+            #     ),
+            # WriteParam(name='realar5',
+            #     read_param='RATEB',
+            #     base_param=read_param_dict['RATEB']
+            #     ),
+            # WriteParam(name='realar6',
+            #     read_param='RATEC',
+            #     base_param=read_param_dict['RATEC']
+            #     ),
             WriteParam(name='realar4',
-                read_param='RATEA',
-                base_param=read_param_dict['RATEA']
+                read_param='FROMSHNT',
+                data_type='real',
+                trns_fn=get_real,
+                base_param=read_param_dict['FROMSHNT']
                 ),
             WriteParam(name='realar5',
-                read_param='RATEB',
-                base_param=read_param_dict['RATEB']
+                read_param='FROMSHNT',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['FROMSHNT']
                 ),
             WriteParam(name='realar6',
-                read_param='RATEC',
-                base_param=read_param_dict['RATEC']
+                read_param='TOSHNT',
+                data_type='real',
+                trns_fn=get_real,
+                base_param=read_param_dict['TOSHNT']
                 ),
             WriteParam(name='realar7',
-                read_param='FROMSHNT',
+                read_param='TOSHNT',
                 data_type='real',
-                trns_fn=get_real,
-                base_param=read_param_dict['FROMSHNT']
+                trns_fn=get_imag,
+                base_param=read_param_dict['TOSHNT']
                 ),
             WriteParam(name='realar8',
-                read_param='FROMSHNT',
-                data_type='real',
-                trns_fn=get_imag,
-                base_param=read_param_dict['FROMSHNT']
-                ),
-            WriteParam(name='realar9',
-                read_param='TOSHNT',
-                data_type='real',
-                trns_fn=get_real,
-                base_param=read_param_dict['TOSHNT']
-                ),
-            WriteParam(name='realar10',
-                read_param='TOSHNT',
-                data_type='real',
-                trns_fn=get_imag,
-                base_param=read_param_dict['TOSHNT']
-                ),
-            WriteParam(name='realar11',
                 read_param='LENGTH',
                 base_param=read_param_dict['LENGTH']
                 ),
-            WriteParam(name='realar12',
+            WriteParam(name='realar9',
                 read_param='FRACT1',
                 base_param=read_param_dict['FRACT1']
                 ),
-            WriteParam(name='realar13',
+            WriteParam(name='realar10',
                 read_param='FRACT2',
                 base_param=read_param_dict['FRACT2']
                 ),
-            WriteParam(name='realar14',
+            WriteParam(name='realar11',
                 read_param='FRACT3',
                 base_param=read_param_dict['FRACT3']
                 ),
-            WriteParam(name='realar15',
+            WriteParam(name='realar12',
                 read_param='FRACT4',
                 base_param=read_param_dict['FRACT4']
-                )
+                ),
+            # Ratings
+            WriteParam(name='ratings1',
+                read_param='RATE1',
+                base_param=read_param_dict['RATE1']
+                ),
+            WriteParam(name='ratings2',
+                read_param='RATE2',
+                base_param=read_param_dict['RATE2']
+                ),
+            WriteParam(name='ratings3',
+                read_param='RATE3',
+                base_param=read_param_dict['RATE3']
+                ),
+            WriteParam(name='ratings4',
+                read_param='RATE4',
+                base_param=read_param_dict['RATE4']
+                ),
+            WriteParam(name='ratings5',
+                read_param='RATE5',
+                base_param=read_param_dict['RATE5']
+                ),
+            WriteParam(name='ratings6',
+                read_param='RATE6',
+                base_param=read_param_dict['RATE6']
+                ),
+            WriteParam(name='ratings7',
+                read_param='RATE7',
+                base_param=read_param_dict['RATE7']
+                ),
+            WriteParam(name='ratings8',
+                read_param='RATE8',
+                base_param=read_param_dict['RATE8']
+                ),
+            WriteParam(name='ratings9',
+                read_param='RATE9',
+                base_param=read_param_dict['RATE9']
+                ),
+            WriteParam(name='ratings10',
+                read_param='RATE10',
+                base_param=read_param_dict['RATE10']
+                ),
+            WriteParam(name='ratings11',
+                read_param='RATE11',
+                base_param=read_param_dict['RATE11']
+                ),
+            WriteParam(name='ratings12',
+                read_param='RATE12',
+                base_param=read_param_dict['RATE12']
+                ),           
         ]
     }
 }
@@ -782,9 +927,9 @@ del_params = {
 }
 
 fns = [
-    PSSE_Fn('branch_data',
-        make_param_dict(fn_param_dict['branch_data']['primaries']),
-        make_param_dict(fn_param_dict['branch_data']['writables']),
+    PSSE_Fn('branch_data_3',
+        make_param_dict(fn_param_dict['branch_data_3']['primaries']),
+        make_param_dict(fn_param_dict['branch_data_3']['writables']),
     )
 ]
 
