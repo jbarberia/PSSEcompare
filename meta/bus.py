@@ -76,6 +76,14 @@ ReadParam(name='OWNER',
             Owner number (1 through 9999). OWNER = 1 by default.
             """)
     ),
+ReadParam(name='SECTION',
+    data_type='int',
+    read_fn_key=COMMON_READ_FN_KEY,
+    display_name='section',
+    description=textwrap.dedent("""\
+            Bus section number, 0 if bus is not in a substation
+            """)
+    ),
 ReadParam(name='DUMMY',
     data_type='int',
     read_fn_key=COMMON_READ_FN_KEY,
@@ -243,12 +251,15 @@ ReadParam(name='EXNAME',
 read_param_dict = make_param_dict(read_params)
 
 write_primary_list = [
-    WriteParam(name='i',
+    WriteParam(name='ibus',
         read_param='NUMBER',
         base_param=read_param_dict['NUMBER']
         ),
+    WriteParam(name='inode',
+        read_param='SECTION',
+        base_param=read_param_dict['SECTION']
+        ),
     ]
-
 write_param_list = [
     WriteParam(name='name',
         read_param='NAME',
@@ -287,14 +298,14 @@ write_param_list = [
 write_primary_dict = make_param_dict(write_primary_list)
 write_param_dict = make_param_dict(write_param_list)
 
-fns = [PSSE_Fn(name='bus_data_3',
+fns = [PSSE_Fn(name='bus_data_4',
     prim_ordered_dict=write_primary_dict,
     write_ordered_dict=write_param_dict,
     )
     ]
 
 
-bus_elem = Element('bus', ('NUMBER',), read_param_dict, slurp_flags, fns)
+bus_elem = Element('bus', ('NUMBER','SECTION'), read_param_dict, slurp_flags, fns)
 
 if __name__ == "__main__":
     print bus_elem

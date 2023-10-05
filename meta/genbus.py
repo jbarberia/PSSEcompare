@@ -21,6 +21,22 @@ read_params = [
 
         """)
         ),
+    ReadParam(name='SECTION',
+        data_type='int',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='NREG',
+        data_type='int',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
     ReadParam(name='TYPE',
         data_type='int',
         read_fn_key='COMMON_READ_FN_KEY',
@@ -380,15 +396,23 @@ read_param_dict = make_param_dict(read_params)
 fn_param_dict = {
     'plant_data':{
         'primaries':[
-            WriteParam(name='i',
+            WriteParam(name='ibus',
                 read_param='NUMBER',
                 base_param=read_param_dict['NUMBER']
-                )
+                ),
+            WriteParam(name='inode',
+                read_param='SECTION',
+                base_param=read_param_dict['SECTION']
+                ),
         ],
         'writables':[
             WriteParam(name='intgar1',
                 read_param='IREG',
                 base_param=read_param_dict['IREG']
+                ),
+            WriteParam(name='intgar2',
+                read_param='NREG',
+                base_param=read_param_dict['NREG']
                 ),
             WriteParam(name='realar1',
                 read_param='VSPU',
@@ -408,7 +432,11 @@ del_params = {
             WriteParam(name='frmbus',
                 read_param='NUMBER',
                 base_param=read_param_dict['NUMBER']
-                )
+                ),
+            WriteParam(name='inode',
+                read_param='SECTION',
+                base_param=read_param_dict['SECTION']
+                ),
         ],
         'writables':[
 
@@ -417,7 +445,7 @@ del_params = {
 }
 
 fns = [
-    PSSE_Fn('plant_data',
+    PSSE_Fn('plant_data_4',
         make_param_dict(fn_param_dict['plant_data']['primaries']),
         make_param_dict(fn_param_dict['plant_data']['writables']),
     )
@@ -430,4 +458,4 @@ del_fn = [
     )
 ]
 
-genbus_elem = Element("genbus", ('NUMBER',), read_param_dict, slurp_flags, fns, del_fn[0])
+genbus_elem = Element("genbus", ('NUMBER','SECTION'), read_param_dict, slurp_flags, fns, del_fn[0])

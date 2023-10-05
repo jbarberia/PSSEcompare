@@ -5,7 +5,7 @@ __license__ = "GPL"
 __version__ = "1.0.0"
 
 elem_name = 'genbus'
-elem_primaries = ('NUMBER',)
+elem_primaries = ('NUMBER', 'SECTION')
 COMMON_READ_FN_KEY = 'genbus'
 
 # flags:
@@ -19,8 +19,8 @@ COMMON_READ_FN_KEY = 'genbus'
 # 5 - all buses, including those that are not plant buses.
 slurp_flags = {'flag':4}
 
-read_dict = {'int':['NUMBER','TYPE','AREA','ZONE','OWNER','DUMMY','STATUS',
-            'IREG'],
+read_dict = {'int':['NUMBER', 'SECTION', 'TYPE','AREA','ZONE','OWNER','DUMMY','STATUS',
+            'IREG', 'NREG'],
         'real':['BASE','PU','KV','ANGLE','ANGLED','PERCENT','IREGBASE',
             'IREGPU','IREGKV','VSPU','VSKV','RMPCT',
             'PGEN','QGEN','MVA','PMAX','PMIN','QMAX','QMIN','MISMATCH',
@@ -31,12 +31,14 @@ read_dict = {'int':['NUMBER','TYPE','AREA','ZONE','OWNER','DUMMY','STATUS',
         }
 
 
-write_fns = {'plant_data':{
+write_fns = {'plant_data_4':{
         'primaries':[
-            {'name':'i', 'read_name':'NUMBER'},
+            {'name':'ibus', 'read_name':'NUMBER'},
+            {'name':'inode', 'read_name':'SECTION'},
             ],
         'writables':[
             {'name':'intgar1','read_name':'IREG'},
+            {'name':'intgar2','read_name':'NREG'},
             {'name':'realar1','read_name':'VSPU'},
             {'name':'realar2','read_name':'RMPCT'},
             ]
