@@ -42,11 +42,13 @@ PREF_PSSE_VER = None
 # this adds pssbin to system path. System path is global for all modules so
 # there is no need to run this in any files that import app_settings, just run
 # import psspy
-USE_CASPY =True
+USE_CASPY =False
 if 'Windows' in platform.platform():
-    pssepath.add_pssepath(PREF_PSSE_VER)
+    import psse34
+    # pssepath.add_pssepath(PREF_PSSE_VER)
     # python exec required for the selected psse.
-    PYTHON_EXEC = pssepath.req_python_exec
+    # PYTHON_EXEC = pssepath.req_python_exec
+    PYTHON_EXEC = sys.executable
 else:
     # If not windows, define this as just the currently running python.
     PYTHON_EXEC = sys.executable

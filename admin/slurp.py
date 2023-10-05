@@ -149,7 +149,7 @@ def run_in_python(filename,*args,**kwargs):
         else:
             print " Could not use caspy trying psspy"
             return False
-    except Exception in e:
+    except Exception:
         raise
 
 def try_import_caspy(filename):
