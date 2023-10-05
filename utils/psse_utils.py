@@ -65,7 +65,13 @@ def subsystem_info(name, attributes, sid=-1, flags=None):
             'C': getattr(psspy, 'a%schar' % name), }
 
     result = []
-    ierr, attr_types = gettypes(attributes)
+
+    if len(attributes) > 50:
+        ierr, attr_types_1 = gettypes(attributes[:50])
+        ierr, attr_types_2 = gettypes(attributes[50:])
+        attr_types = attr_types_1 + attr_types_2
+    else:
+        ierr, attr_types = gettypes(attributes)
 
     for k, group in groupby(zip(attr_types, attributes), key=attr_type):
         func = apilookup[k]

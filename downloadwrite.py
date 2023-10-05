@@ -164,21 +164,21 @@ def removed_lines(removed_elems_by_type, indent=''):
 
     for elemtype in DEL_ORDER:
         lines.append(indent + '# === Removed %s' % elemtype)
-        nodes = removed_elems_by_type[elemtype]
+        nodes = list(set(removed_elems_by_type[elemtype]))
         e = elements[elemtype]
         cmd_strs = []
         if elemtype == 'bus':
             # make an sid of all the buses that need to be removed.
             if nodes:
                 sid_str = indent + 'psspy.bsys(11, numbus=%s, buses=[%s])'
-                cmd_strs.append(sid_str % (len(nodes), nodejoin.join(nodes)))
+                cmd_strs.append(sid_str % (len(nodes), nodejoin.join(x.split("|")[0] for x in nodes)))
                 cmd_strs.append(indent + 'psspy.extr(sid=11)')
 
         elif elemtype == 'genbus':
             # can't use purgplnt if the machines have already been removed.
             if nodes:
                 sid_str = indent + 'psspy.bsys(11, numbus=%s, buses=[%s])'
-                cmd_strs.append(sid_str % (len(nodes), nodejoin.join(nodes)))
+                cmd_strs.append(sid_str % (len(nodes), nodejoin.join(x.split("|")[0] for x in nodes)))
                 # opt = 4 is plants
                 cmd_strs.append(indent + 'psspy.purg(sid=11, opt=4)')
 
