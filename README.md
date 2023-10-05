@@ -1,39 +1,28 @@
 # PSSEcompare
-<b>DESCRIPTION:</b>
+## DESCRIPTION:
 Compares PSS®E sav or raw files using python and output difference in excel or py files.This is the commandline version 
-based on [Gridcompare] (http://www.whit.com.au/gridcompare/) with the added fuctionality to include raw files as inputs.
+based on [Gridcompare](http://www.whit.com.au/gridcompare/) with the added fuctionality to include raw files as inputs.
 
-*Please see the pyV27 branch for the PSS®E 33 specific version which uses a much faster version of xlsxwriter and does not have memory issues for really large differential files*
 
-<b>HISTORY:</b> 
-While trying to compare various PSS®E files I found that Gridcompare kept crashing and it was getting to be a pain
-in trying to debug the JSON and bottle calls in its browser based comparisons. I decided to create a commandline version of this excellent tool.
+## HISTORY: 
+This is a fork from the [original_repo](https://github.com/sbhowmik7/PSSEcompare), adapted to the PSSE34 version.
 
-PSS®E 33.0 to PSS®E 33.8 had a bad "caspy.Savefile()" module which was leading to the crashes.
-
-<b>USAGE:</b>
+## USAGE:
 the main file is <i> runPSSECompare.py</i>. Modify this to change the default inputs to or use the command line version
 > python -m runPSSEcompare -o {Originalfile} -c {File2compare} -x[WriteoutExcelFile]
 
-<b>MODIFICATION:</b>
+## MODIFICATION:
 Use *app_settings.py* to change some of the paths as well as some of the settings
 
-<b>NOTES:</b>
-Uses subprocess (with caspy) in case caspy causes python to crash. If so it tries to use psspy modules
-to access the data within the input files. Use of caspy can be done with just PSSE installed and does not 
-require a dongle to work which is advantageous if one has an hourly license.
-On really large files like the eastern interconnect (>60K buses) it takes a really large time and might crash due to size constraint on the sqlite databases.
-
-<b>USES:</b> 
+## USES: 
 Public modules/library:
 * openpyxl
 * orderdict
 
-<b>Other:</b>
+## Other:
 pssepath
 
-
-<b>TESTED:</b>
-Tested on Windows with PSS®E 33/32/31 and their respective python versions (2.7,2.5)
+## TESTED:
+Tested on Windows with PSS®E 34 and their respective python versions (2.7)
 
 __email:__ *sbhowmik at rocketmail dot com*
