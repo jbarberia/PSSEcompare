@@ -93,6 +93,14 @@ read_params = [
 
         """)
         ),
+    ReadParam(name='NREG',
+        data_type='int',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
     ReadParam(name='BLOCKS',
         data_type='int',
         read_fn_key='COMMON_READ_FN_KEY',
@@ -763,10 +771,14 @@ fn_param_dict = {
                 base_param=read_param_dict['IREG']
                 ),
             WriteParam(name='intgar11',
+                read_param='NREG',
+                base_param=read_param_dict['NREG']
+                ),
+            WriteParam(name='intgar12',
                 read_param='STATUS',
                 base_param=read_param_dict['STATUS']
                 ),
-            WriteParam(name='intgar12',
+            WriteParam(name='intgar13',
                 read_param='ADJMETHOD',
                 base_param=read_param_dict['ADJMETHOD']
                 ),
@@ -841,7 +853,7 @@ del_params = {
 }
 
 fns = [
-    PSSE_Fn('switched_shunt_data_3',
+    PSSE_Fn('switched_shunt_data_4',
         make_param_dict(fn_param_dict['switched_shunt_data_3']['primaries']),
         make_param_dict(fn_param_dict['switched_shunt_data_3']['writables']),
     )

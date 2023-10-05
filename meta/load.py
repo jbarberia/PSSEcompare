@@ -330,9 +330,9 @@ read_params = [
 read_param_dict = make_param_dict(read_params)
 
 fn_param_dict = {
-    'load_data_3':{
+    'load_data_5':{
         'primaries':[
-            WriteParam(name='i',
+            WriteParam(name='ibus',
                 read_param='NUMBER',
                 base_param=read_param_dict['NUMBER']
                 ),
@@ -421,9 +421,9 @@ del_params = {
 }
 
 fns = [
-    PSSE_Fn('load_data_3',
-        make_param_dict(fn_param_dict['load_data_3']['primaries']),
-        make_param_dict(fn_param_dict['load_data_3']['writables']),
+    PSSE_Fn('load_data_5',
+        make_param_dict(fn_param_dict['load_data_5']['primaries']),
+        make_param_dict(fn_param_dict['load_data_5']['writables']),
     )
 ]
 

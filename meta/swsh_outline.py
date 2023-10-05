@@ -14,7 +14,7 @@ read_dict = {'int':['NUMBER','TYPE','AREA','ZONE','OWNER','DUMMY','MODE',
              'STATUS',
             # Bug: ADJMETHOD is listed as 'ADJM' in the PSSEAPI and is invalid.
              'ADJMETHOD',
-            'IREG','BLOCKS',
+            'IREG','NREG','BLOCKS',
             'STEPSBLOCK1','STEPSBLOCK2','STEPSBLOCK3','STEPSBLOCK4',
             'STEPSBLOCK5','STEPSBLOCK6','STEPSBLOCK7','STEPSBLOCK8'],
         'real':['BASE','PU','KV','ANGLE','ANGLED','VSWHI','VSWLO','RMPCT',
