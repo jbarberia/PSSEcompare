@@ -77,6 +77,14 @@ read_params = [
 
         """)
         ),
+    ReadParam(name='NCONT',
+        data_type='int',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
     ReadParam(name='STATUS',
         data_type='int',
         read_fn_key='COMMON_READ_FN_KEY',
@@ -470,6 +478,102 @@ read_params = [
         """)
         ),
     ReadParam(name='RATEC',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE1',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE2',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE3',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE4',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE5',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE6',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE7',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE8',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE9',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE10',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE11',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE12',
         data_type='real',
         read_fn_key='COMMON_READ_FN_KEY',
         display_name="",
@@ -926,11 +1030,15 @@ fn_param_dict = {
                 read_param='ICONTNUMBER',
                 base_param=read_param_dict['ICONTNUMBER']
                 ),
-            # WriteParam(name='intgar4',
+            WriteParam(name='intgar4',
+                read_param='NCONT',
+                base_param=read_param_dict['NCONT']
+                ),
+            # WriteParam(name='intgar5',
             #     read_param='None',
             #     base_param=read_param_dict['None']
             #     ),
-            WriteParam(name='intgar5',
+            WriteParam(name='intgar6',
                 read_param='CODE',
                 base_param=read_param_dict['CODE']
                 ),
@@ -947,49 +1055,97 @@ fn_param_dict = {
                 base_param=read_param_dict['ANGLE']
                 ),
             WriteParam(name='realari4',
-                read_param='RATEA',
-                base_param=read_param_dict['RATEA']
-                ),
-            WriteParam(name='realari5',
-                read_param='RATEB',
-                base_param=read_param_dict['RATEB']
-                ),
-            WriteParam(name='realari6',
-                read_param='RATEC',
-                base_param=read_param_dict['RATEC']
-                ),
-            WriteParam(name='realari7',
                 read_param='RMAX',
                 base_param=read_param_dict['RMAX']
                 ),
-            WriteParam(name='realari8',
+            WriteParam(name='realari5',
                 read_param='RMIN',
                 base_param=read_param_dict['RMIN']
                 ),
-            WriteParam(name='realari9',
+            WriteParam(name='realari6',
                 read_param='VMAX',
                 base_param=read_param_dict['VMAX']
                 ),
-            WriteParam(name='realari10',
+            WriteParam(name='realari7',
                 read_param='VMIN',
                 base_param=read_param_dict['VMIN']
                 ),
-            WriteParam(name='realari11',
+            WriteParam(name='realari8',
                 read_param='COMPRX',
                 data_type='real',
                 trns_fn=get_real,
                 base_param=read_param_dict['COMPRX']
                 ),
-            WriteParam(name='realari12',
+            WriteParam(name='realari9',
                 read_param='COMPRX',
                 data_type='real',
                 trns_fn=get_imag,
                 base_param=read_param_dict['COMPRX']
                 ),
-            # WriteParam(name='realari13',
+            # WriteParam(name='realari10',
             #     read_param='None',
             #     base_param=read_param_dict['None']
             #     )
+            WriteParam(name='ratings1',
+                read_param='RATE1',
+                data_type='real',
+                base_param=read_param_dict['RATE1']
+                ),
+            WriteParam(name='ratings2',
+                read_param='RATE2',
+                data_type='real',
+                base_param=read_param_dict['RATE2']
+                ),
+            WriteParam(name='ratings3',
+                read_param='RATE3',
+                data_type='real',
+                base_param=read_param_dict['RATE3']
+                ),
+            WriteParam(name='ratings4',
+                read_param='RATE4',
+                data_type='real',
+                base_param=read_param_dict['RATE4']
+                ),
+            WriteParam(name='ratings5',
+                read_param='RATE5',
+                data_type='real',
+                base_param=read_param_dict['RATE5']
+                ),
+            WriteParam(name='ratings6',
+                read_param='RATE6',
+                data_type='real',
+                base_param=read_param_dict['RATE6']
+                ),
+            WriteParam(name='ratings7',
+                read_param='RATE7',
+                data_type='real',
+                base_param=read_param_dict['RATE7']
+                ),
+            WriteParam(name='ratings8',
+                read_param='RATE8',
+                data_type='real',
+                base_param=read_param_dict['RATE8']
+                ),
+            WriteParam(name='ratings9',
+                read_param='RATE9',
+                data_type='real',
+                base_param=read_param_dict['RATE9']
+                ),
+            WriteParam(name='ratings10',
+                read_param='RATE10',
+                data_type='real',
+                base_param=read_param_dict['RATE10']
+                ),
+            WriteParam(name='ratings11',
+                read_param='RATE11',
+                data_type='real',
+                base_param=read_param_dict['RATE11']
+                ),
+            WriteParam(name='ratings12',
+                read_param='RATE12',
+                data_type='real',
+                base_param=read_param_dict['RATE12']
+                ),
         ]
     }
 }

@@ -11,7 +11,7 @@ COMMON_READ_FN_KEY = 'wnd'
 slurp_flags = {'ties':3, 'flag':3}
 
 read_dict = {'int':['WNDBUSNUMBER','OTHER1NUMBER','OTHER2NUMBER',
-            'WNDNUM','WIND1NUMBER','WIND2NUMBER','WIND3NUMBER',
+            'WNDNUM','WIND1NUMBER','WIND2NUMBER','WIND3NUMBER','NCONT',
             # common to tnr (2 winding transformer) args
             'NMETERNUMBER','STATUS','OWNERS','OWN1','OWN2','OWN3','OWN4',
             'ICONTNUMBER','TABLE','CODE','NTPOSN',

@@ -37,6 +37,14 @@ read_params = [
 
         """)
         ),
+    ReadParam(name='NCONT',
+        data_type='int',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
     ReadParam(name='METERNUMBER',
         data_type='int',
         read_fn_key='COMMON_READ_FN_KEY',
@@ -390,6 +398,678 @@ read_params = [
         """)
         ),
     ReadParam(name='MXPCTCRPRATC',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE1',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE1',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE1',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE1',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE1',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT1',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT1',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE2',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE2',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE2',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE2',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE2',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT2',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT2',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE3',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE3',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE3',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE3',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE3',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT3',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT3',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE4',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE4',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE4',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE4',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE4',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT4',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT4',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE5',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE5',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE5',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE5',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE5',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT5',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT5',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE6',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE6',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE6',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE6',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE6',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT6',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT6',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE7',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE7',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE7',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE7',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE7',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT7',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT7',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE8',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE8',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE8',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE8',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE8',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT8',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT8',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE9',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE9',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE9',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE9',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE9',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT9',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT9',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE10',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE10',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE10',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE10',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE10',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT10',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT10',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE11',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE11',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE11',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE11',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE11',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT11',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT11',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='RATE12',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTRATE12',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTMVARATE12',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='PCTCORPRATE12',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MAXPCTRATE12',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTMVARAT12',
+        data_type='real',
+        read_fn_key='COMMON_READ_FN_KEY',
+        display_name="",
+        description=textwrap.dedent("""\
+
+        """)
+        ),
+    ReadParam(name='MXPCTCRPRAT12',
         data_type='real',
         read_fn_key='COMMON_READ_FN_KEY',
         display_name="",
@@ -1006,23 +1686,27 @@ fn_param_dict = {
                 read_param='ICONTNUMBER',
                 base_param=read_param_dict['ICONTNUMBER']
                 ),
-            # WriteParam(name='intgar11',
+            WriteParam(name='intgar11',
+                read_param='NCONT',
+                base_param=read_param_dict['NCONT']
+                ),
+            # WriteParam(name='intgar12',
             #     read_param='None',
             #     base_param=read_param_dict['None']
             #     ),
-            WriteParam(name='intgar12',
+            WriteParam(name='intgar13',
                 read_param='CODE',
                 base_param=read_param_dict['CODE']
                 ),
-            WriteParam(name='intgar13',
+            WriteParam(name='intgar14',
                 read_param='CW',
                 base_param=read_param_dict['CW']
                 ),
-            WriteParam(name='intgar14',
+            WriteParam(name='intgar15',
                 read_param='CZ',
                 base_param=read_param_dict['CZ']
                 ),
-            WriteParam(name='intgar15',
+            WriteParam(name='intgar16',
                 read_param='CM',
                 base_param=read_param_dict['CM']
                 ),
@@ -1063,68 +1747,56 @@ fn_param_dict = {
                 base_param=read_param_dict['NOMV2']
                 ),
             WriteParam(name='realari9',
-                read_param='RATEA',
-                base_param=read_param_dict['RATEA']
-                ),
-            WriteParam(name='realari10',
-                read_param='RATEB',
-                base_param=read_param_dict['RATEB']
-                ),
-            WriteParam(name='realari11',
-                read_param='RATEC',
-                base_param=read_param_dict['RATEC']
-                ),
-            WriteParam(name='realari12',
                 read_param='FRACT1',
                 base_param=read_param_dict['FRACT1']
                 ),
-            WriteParam(name='realari13',
+            WriteParam(name='realari10',
                 read_param='FRACT2',
                 base_param=read_param_dict['FRACT2']
                 ),
-            WriteParam(name='realari14',
+            WriteParam(name='realari11',
                 read_param='FRACT3',
                 base_param=read_param_dict['FRACT3']
                 ),
-            WriteParam(name='realari15',
+            WriteParam(name='realari12',
                 read_param='FRACT4',
                 base_param=read_param_dict['FRACT4']
                 ),
-            WriteParam(name='realari16',
+            WriteParam(name='realari13',
                 read_param='YMAG',
                 data_type='real',
                 trns_fn=get_real,
                 base_param=read_param_dict['YMAG']
                 ),
-            WriteParam(name='realari17',
+            WriteParam(name='realari14',
                 read_param='YMAG',
                 data_type='real',
                 trns_fn=get_imag,
                 base_param=read_param_dict['YMAG']
                 ),
-            WriteParam(name='realari18',
+            WriteParam(name='realari15',
                 read_param='RMAX',
                 base_param=read_param_dict['RMAX']
                 ),
-            WriteParam(name='realari19',
+            WriteParam(name='realari16',
                 read_param='RMIN',
                 base_param=read_param_dict['RMIN']
                 ),
-            WriteParam(name='realari20',
+            WriteParam(name='realari17',
                 read_param='VMAX',
                 base_param=read_param_dict['VMAX']
                 ),
-            WriteParam(name='realari21',
+            WriteParam(name='realari18',
                 read_param='VMIN',
                 base_param=read_param_dict['VMIN']
                 ),
-            WriteParam(name='realari22',
+            WriteParam(name='realari19',
                 read_param='COMPRX',
                 data_type='real',
                 trns_fn=get_real,
                 base_param=read_param_dict['COMPRX']
                 ),
-            WriteParam(name='realari23',
+            WriteParam(name='realari20',
                 read_param='COMPRX',
                 data_type='real',
                 trns_fn=get_imag,
@@ -1134,6 +1806,78 @@ fn_param_dict = {
             #     read_param='None',
             #     base_param=read_param_dict['None']
             #     )
+            WriteParam(name='ratings1',
+                read_param='RATE1',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE1']
+                ),
+            WriteParam(name='ratings2',
+                read_param='RATE2',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE2']
+                ),
+            WriteParam(name='ratings3',
+                read_param='RATE3',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE3']
+                ),
+            WriteParam(name='ratings4',
+                read_param='RATE4',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE4']
+                ),
+            WriteParam(name='ratings5',
+                read_param='RATE5',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE5']
+                ),
+            WriteParam(name='ratings6',
+                read_param='RATE6',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE6']
+                ),
+            WriteParam(name='ratings7',
+                read_param='RATE7',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE7']
+                ),
+            WriteParam(name='ratings8',
+                read_param='RATE8',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE8']
+                ),
+            WriteParam(name='ratings9',
+                read_param='RATE9',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE9']
+                ),
+            WriteParam(name='ratings10',
+                read_param='RATE10',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE10']
+                ),
+            WriteParam(name='ratings11',
+                read_param='RATE11',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE11']
+                ),
+            WriteParam(name='ratings12',
+                read_param='RATE12',
+                data_type='real',
+                trns_fn=get_imag,
+                base_param=read_param_dict['RATE12']
+                ),
         ]
     }
 }
@@ -1161,7 +1905,7 @@ del_params = {
 }
 
 fns = [
-    PSSE_Fn('two_winding_data_3',
+    PSSE_Fn('two_winding_data_6',
         make_param_dict(fn_param_dict['two_winding_data_3']['primaries']),
         make_param_dict(fn_param_dict['two_winding_data_3']['writables']),
     )
