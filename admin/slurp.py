@@ -92,6 +92,7 @@ def slurp_single_case(filename,case_letter):
         psspy.readrawversion(0,pssevers,filename)
 
     slurp_con = get_slurp_db_con()
+    slurp_con.text_factory = str
     slurp_con.execute("DELETE FROM slurp%s" %(case_letter,))
 
     for e in elements.values():

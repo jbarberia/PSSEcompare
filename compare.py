@@ -22,6 +22,7 @@ def changes_by_bus():
     changes = defaultdict(list)
 
     conn = sqlite3.connect(app_settings.COMPARE_DB)
+    conn.text_factory = str
     curs = conn.cursor()
 
     curs.execute("""SELECT * FROM compare""")

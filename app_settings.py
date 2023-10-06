@@ -14,13 +14,12 @@ APP_DIR = os.path.abspath(os.path.dirname(__file__))
 ADMIN_DIR = os.path.join(APP_DIR, 'admin')
 UTILS_DIR = os.path.join(APP_DIR, 'utils')
 META_DIR = os.path.join(APP_DIR, 'meta')
-LIB_DIR = os.path.join(APP_DIR, 'ext_libs')
 
 def add_to_syspath(new_dir):
     if new_dir not in sys.path:
         sys.path.insert(0, new_dir)
 
-for app_dir in reversed([APP_DIR, ADMIN_DIR, UTILS_DIR, META_DIR,LIB_DIR]):#BOTTLE_TEMPLATE_DIR, STATIC_DIR,
+for app_dir in reversed([APP_DIR, ADMIN_DIR, UTILS_DIR, META_DIR]):#BOTTLE_TEMPLATE_DIR, STATIC_DIR,
     add_to_syspath(app_dir)
 
 if 'Windows' in platform.platform():

@@ -68,7 +68,7 @@ def make_python(fid_out,origfile):
 
     write_py_main(fid_out,origfile)
 
-    fid_out.write(make_change_fn().decode('latin1'))
+    fid_out.write(make_change_fn())
 
     write_call_main(fid_out)
 
@@ -392,7 +392,7 @@ def construct_data_format_fn(e, action):
 
 def make_excel(filename):
     """Write an excel spreadsheet to fid."""
-    wb = openpyxl.Workbook()
+    wb = openpyxl.Workbook(True)
 
     con = sqlite3.connect(app_settings.COMPARE_DB)
     con.text_factory = str
